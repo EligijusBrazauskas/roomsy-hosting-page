@@ -3,63 +3,78 @@
 	overflow-x: hidden;
 
 	.container-outer {
-		@apply h-full max-w-[1200px];
+		height: 100%;
+		max-width: 1200px;
 	}
 
 	.container-inner {
-		@apply h-full max-w-[1050px];
+		height: 100%;
+		max-width: 1050px;
 	}
 
 	.h1_bold {
-		@apply text-[48px] font-extrabold;
+		font-size: 48px;
+		font-weight: 800;
 	}
 
 	h1 {
-		@apply text-[38px] font-semibold;
+		font-size: 38px;
+		font-weight: 600;
 	}
 
 	h2 {
-		@apply text-[20px] font-normal;
+		font-size: 20px;
+		font-weight: 400;
 	}
 
 	.label {
 		line-height: 1.1;
-
-		@apply text-[14px] font-bold;
+		font-size: 14px;
+		font-weight: 700;
 	}
 
 	.card-title {
-		@apply text-[18px] font-bold;
+		font-size: 18px;
+		font-weight: 700;
 	}
 
 	.subtext-small {
 		line-height: 1.1;
-
-		@apply text-[12px] font-normal text-gray-text;
+		font-size: 12px;
+		font-weight: 400;
+		color: #606060;
 	}
 
 	.subtext {
 		line-height: 1.1;
-
-		@apply text-[14px] font-normal text-gray-text;
+		font-size: 14px;
+		font-weight: 400;
+		color: #606060;
 	}
 
 	.subtext-regular {
-		@apply text-[14px] font-normal;
+		font-size: 14px;
+		font-weight: 400;
 	}
 
 	.link {
 		text-decoration: underline;
-
-		@apply text-[14px] font-bold;
+		font-size: 14px;
+		font-weight: 700;
 	}
 
 	.hoverable {
-		@apply transition-all hover:text-black;
+		transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover {
+			color: black;
+		}
 	}
 
 	.itallic {
 		font-family: 'Parisienne', cursive;
-		@apply text-[38px] font-normal italic;
+		font-size: 38px;
+		font-weight: 400;
+		font-style: italic;
 	}
 }
