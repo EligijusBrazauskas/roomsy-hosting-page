@@ -1,0 +1,65 @@
+.App {
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+
+	.container-outer {
+		@apply h-full max-w-[1200px];
+	}
+
+	.container-inner {
+		@apply h-full max-w-[1050px];
+	}
+
+	.h1_bold {
+		@apply text-[48px] font-extrabold;
+	}
+
+	h1 {
+		@apply text-[38px] font-semibold;
+	}
+
+	h2 {
+		@apply text-[20px] font-normal;
+	}
+
+	.label {
+		line-height: 1.1;
+
+		@apply text-[14px] font-bold;
+	}
+
+	.card-title {
+		@apply text-[18px] font-bold;
+	}
+
+	.subtext-small {
+		line-height: 1.1;
+
+		@apply text-[12px] font-normal text-gray-text;
+	}
+
+	.subtext {
+		line-height: 1.1;
+
+		@apply text-[14px] font-normal text-gray-text;
+	}
+
+	.subtext-regular {
+		@apply text-[14px] font-normal;
+	}
+
+	.link {
+		text-decoration: underline;
+
+		@apply text-[14px] font-bold;
+	}
+
+	.hoverable {
+		@apply transition-all hover:text-black;
+	}
+
+	.itallic {
+		font-family: 'Parisienne', cursive;
+		@apply text-[38px] font-normal italic;
+	}
+}
